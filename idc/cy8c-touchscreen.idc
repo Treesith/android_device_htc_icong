@@ -13,7 +13,7 @@
 # limitations under the License.
 
 #
-# Input Device Calibration File for the HTC Wildfire S touch screen.
+# Input Device Calibration File for the HTC Salsa touch screen.
 #
 
 # Basic Parameters

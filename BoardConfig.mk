@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TARGET_BOOTLOADER_BOARD_NAME := marvel
-TARGET_SPECIFIC_HEADER_PATH := device/htc/marvel/include
+TARGET_BOOTLOADER_BOARD_NAME := icong
+TARGET_SPECIFIC_HEADER_PATH := device/htc/icong/include
 
 ### Board config
 TARGET_NO_BOOTLOADER := true
@@ -58,7 +58,7 @@ WIFI_BAND                        := 802_11_ABG
 ### Graphics
 # Option for choosing texture target on old adrenos
 BOARD_ADRENO_DECIDE_TEXTURE_TARGET := true
-BOARD_EGL_CFG := device/htc/marvel/egl.cfg
+BOARD_EGL_CFG := device/htc/icong/egl.cfg
 
 COMMON_GLOBAL_CFLAGS += -DREFRESH_RATE=60 -DQCOM_HARDWARE
 USE_OPENGL_RENDERER := true
@@ -90,12 +90,12 @@ COMMON_GLOBAL_CFLAGS += -DBINDER_COMPAT
 ### Recovery
 
 #BOARD_USES_RECOVERY_CHARGEMODE := true
-BOARD_CUSTOM_GRAPHICS := ../../../device/htc/marvel/recovery/graphics.c
+BOARD_CUSTOM_GRAPHICS := ../../../device/htc/icong/recovery/graphics.c
 BOARD_USES_MMCUTILS := false
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_USES_MSM7X27_RECOVERY := true
-TARGET_RECOVERY_INITRC = device/htc/marvel/recovery/init.htc.rc
+TARGET_RECOVERY_INITRC = device/htc/icong/recovery/init.htc.rc
 
 ### Audio
 BOARD_USES_GENERIC_AUDIO := false
@@ -105,7 +105,7 @@ BOARD_USES_QCOM_AUDIO_RESETALL := true
 
 ### Partitions
 
-# # cat /proc/mtd (marvel)
+# # cat /proc/mtd (icong)
 #dev:    size   erasesize  name
 #mtd0: 00100000 00040000 "misc"
 #mtd1: 00500000 00040000 "recovery"
@@ -145,7 +145,7 @@ BOARD_USES_QCOM_LIBS := true
 BOARD_USES_QCOM_LIBRPC := true
 BOARD_USES_QCOM_GPS := true
 BOARD_USE_QCOM_PMEM := true
-BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := marvel
+BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := icong
 BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 20000
 
 ### RIL
